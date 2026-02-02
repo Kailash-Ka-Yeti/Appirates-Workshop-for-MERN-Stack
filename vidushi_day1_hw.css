@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: #c2185b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* MAIN CONTAINER */
+main {
+  width: 800px;
+  height: 450px;
+  background: #fce4ec;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  border-radius: 10px;
+}
+
+.player {
+  padding: 40px;
+  text-align: center;
+  display:flex;
+  flex-direction:column;
+}
+
+.player--active {
+  background: #f8bbd0;
+}
+
+
+.name {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+
+.score {
+  font-size: 60px;
+  color: #c2185b;
+  margin-bottom: 30px;
+}
+
+
+.current {
+  background: #c2185b;
+  color: white;
+  width: 140px;
+  margin:auto auto 0;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.current-label {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.current-score {
+  font-size: 22px;
+}
+
+.dice {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+}
+
+
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border: none;
+  background: white;
+  padding: 8px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn--new {
+  top: 20px;
+}
+
+.btn--roll {
+  bottom: 70px;
+}
+
+.btn--hold {
+  bottom: 30px;
+}
