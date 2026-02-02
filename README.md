@@ -1,3 +1,3 @@
 This is all the stuff that i performed during my 5 day workshop at Appirates.
 Day 1: I learnt a lot about HTML and CSS and also created a webpage for a dice game.
-https://kailash-ka-yeti.github.io/Appirates-Workshop-for-MERN-Stack/
+https://kailash-ka-yeti.github.io/Appirates-Workshop-for-MERN-Stack/vidushi_day1_hw
