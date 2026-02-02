@@ -13,7 +13,6 @@ body {
   align-items: center;
 }
 
-/* MAIN CONTAINER */
 main {
   width: 800px;
   height: 450px;
@@ -98,4 +97,5 @@ main {
 
 .btn--hold {
   bottom: 30px;
+
 }
