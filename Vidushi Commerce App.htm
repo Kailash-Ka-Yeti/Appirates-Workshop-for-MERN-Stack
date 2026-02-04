@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <script defer="defer" src="Vidushi%20Commerce%20App_files/bundle.js"></script><style> * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+body {
+  background: white;
+  color: #111;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 24px;
+  background: white;
+}
+
+.navbar input {
+  flex: 1 1;
+  padding: 8px 12px;
+}
+
+.login {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  gap: 40px;
+  padding: 40px 24px;
+  align-items: center;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-left {
+  flex: 1 1;
+  text-align: center;
+}
+
+.hero h1 span,
+.brands span,
+.cta span {
+  background: linear-gradient(to right, #2563eb, #ec4899);
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+  margin: 20px 0;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.primary {
+  background: linear-gradient(to right, #2563eb, #ec4899);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+}
+
+.secondary {
+  background: white;
+  border: 2px solid #2563eb;
+  color: #2563eb;
+  padding: 12px 20px;
+}
+
+.stats {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.stats span {
+  display: block;
+  font-size: 13px;
+  color: #666;
+}
+
+.hero-right {
+  flex: 1 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+height: 200px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin-top: 30px;
+margin-bottom: 0px;
+}
+
+.feature-card {
+  background: linear-gradient(135deg, #eef2ff, #fdf2f8);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+/* BRANDS */
+.brands {
+  background: white;
+  text-align: center;
+  padding: 30px 24px;
+}
+
+.brand-icons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  color: #555;
+}
+
+/* PRODUCTS */
+.products {
+  padding: 40px 24px;
+}
+
+.products-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 22px;
+}
+
+.product-card {
+  background: white;
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.tag {
+  background: #eef2ff;
+  color: #4338ca;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  display: inline-block;
+  margin: 8px 0;
+}
+
+.product-card button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  background: #2563eb;
+  color: white;
+  border: none;
+}
+
+/* CTA */
+.cta {
+  background: white;
+  text-align: center;
+  padding: 60px 24px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.support {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  background: #f1f5f9;
+  color: #2563eb;
+}
+
+.support span {
+  display: block;
+  font-size: 13px;
+}
+
+.brands {
+  background: #f8fafc;
+  padding: 40px 24px;
+  text-align: center;
+  margin:10px 0px;
+}
+
+.brands h2 {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.brands h2 span {
+  background: linear-gradient(to right, #2563eb, #ec4899);
+  background-clip: text;
+  color: transparent;
+}
+
+.brands-sub {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #64748b;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.brand-icons {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.brand-card {
+  background: white;
+  padding: 32px 24px;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.icon-circle {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  background: #eef2ff;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.brand-card h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.brand-card span {
+  font-size: 14px;
+  color: #64748b;
+}
+.hero {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.hero-buttons {
+  margin-top: 28px;
+  margin-bottom: 32px;
+}
+
+.stats {
+  margin-top: 20px;
+}
+
+.stats div {
+  min-width: 110px;
+}
+.feature-card {
+  padding: 48px;
+}
+
+.brands {
+  padding-top: 90px;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9pbmRleC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkNBQUM7RUFDQyxTQUFTO0VBQ1QsVUFBVTtFQUNWLHNCQUFzQjtFQUN0Qiw0REFBNEQ7O0FBRTlEOztBQUVBO0VBQ0UsaUJBQWlCO0VBQ2pCLFdBQVc7QUFDYjs7QUFFQSxXQUFXO0FBQ1g7RUFDRSxhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLFNBQVM7RUFDVCxrQkFBa0I7RUFDbEIsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UsU0FBTztFQUNQLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLG1CQUFtQjtFQUNuQixZQUFZO0VBQ1osWUFBWTtFQUNaLGlCQUFpQjtBQUNuQjs7QUFFQSxTQUFTO0FBQ1Q7RUFDRSxhQUFhO0VBQ2IsU0FBUztFQUNULGtCQUFrQjtFQUNsQixtQkFBbUI7RUFDbkIsa0JBQWtCO0VBQ2xCLDREQUE0RDtBQUM5RDs7QUFFQTtFQUNFLFNBQU87RUFDUCxrQkFBa0I7QUFDcEI7O0FBRUE7OztFQUdFLHVEQUF1RDtFQUN2RCxxQkFBcUI7RUFDckIsa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsYUFBYTtFQUNiLFNBQVM7RUFDVCxjQUFjO0VBQ2Qsa0JBQWtCO0VBQ2xCLDREQUE0RDtBQUM5RDs7QUFFQTtFQUNFLHVEQUF1RDtFQUN2RCxZQUFZO0VBQ1osWUFBWTtFQUNaLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGlCQUFpQjtFQUNqQix5QkFBeUI7RUFDekIsY0FBYztFQUNkLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGFBQWE7RUFDYixTQUFTO0VBQ1QsZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0UsY0FBYztFQUNkLGVBQWU7RUFDZixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxTQUFPO0VBQ1AsYUFBYTtFQUNiLHVCQUF1QjtFQUN2QixzQkFBc0I7RUFDdEIsa0JBQWtCO0FBQ3BCLGFBQWE7QUFDYiw0REFBNEQ7QUFDNUQsZ0JBQWdCO0FBQ2hCLGtCQUFrQjtBQUNsQjs7QUFFQTtFQUNFLHFEQUFxRDtFQUNyRCxhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLGtCQUFrQjtBQUNwQjs7QUFFQSxXQUFXO0FBQ1g7RUFDRSxpQkFBaUI7RUFDakIsa0JBQWtCO0VBQ2xCLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGFBQWE7RUFDYiw2QkFBNkI7RUFDN0IsZ0JBQWdCO0VBQ2hCLFdBQVc7QUFDYjs7QUFFQSxhQUFhO0FBQ2I7RUFDRSxrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsOEJBQThCO0VBQzlCLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFLGFBQWE7RUFDYiwyREFBMkQ7RUFDM0QsU0FBUztBQUNYOztBQUVBO0VBQ0UsaUJBQWlCO0VBQ2pCLGFBQWE7RUFDYixtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsbUJBQW1CO0VBQ25CLGNBQWM7RUFDZCxpQkFBaUI7RUFDakIsbUJBQW1CO0VBQ25CLGVBQWU7RUFDZixxQkFBcUI7RUFDckIsYUFBYTtBQUNmOztBQUVBO0VBQ0UsV0FBVztFQUNYLGdCQUFnQjtFQUNoQixhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLFlBQVk7RUFDWixZQUFZO0FBQ2Q7O0FBRUEsUUFBUTtBQUNSO0VBQ0UsaUJBQWlCO0VBQ2pCLGtCQUFrQjtFQUNsQixrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsdUJBQXVCO0VBQ3ZCLFNBQVM7RUFDVCxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsNkJBQTZCO0VBQzdCLGFBQWE7RUFDYixtQkFBbUI7RUFDbkIsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGNBQWM7RUFDZCxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsbUJBQW1CO0VBQ25CLGtCQUFrQjtFQUNsQixrQkFBa0I7RUFDbEIsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLGVBQWU7RUFDZixnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSx1REFBdUQ7RUFDdkQscUJBQXFCO0VBQ3JCLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixlQUFlO0VBQ2YsY0FBYztFQUNkLGdCQUFnQjtFQUNoQixpQkFBaUI7RUFDakIsa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGFBQWE7RUFDYixxQ0FBcUM7RUFDckMsU0FBUztFQUNULGlCQUFpQjtFQUNqQixpQkFBaUI7RUFDakIsa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsaUJBQWlCO0VBQ2pCLGtCQUFrQjtFQUNsQixtQkFBbUI7RUFDbkIsa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsV0FBVztFQUNYLFlBQVk7RUFDWixtQkFBbUI7RUFDbkIsa0JBQWtCO0VBQ2xCLG1CQUFtQjtFQUNuQixjQUFjO0VBQ2QsYUFBYTtFQUNiLG1CQUFtQjtFQUNuQix1QkFBdUI7RUFDdkIsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLGVBQWU7RUFDZixnQkFBZ0I7RUFDaEIsa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsZUFBZTtFQUNmLGNBQWM7QUFDaEI7QUFDQTtFQUNFLGtCQUFrQjtFQUNsQixxQkFBcUI7QUFDdkI7QUFDQTtFQUNFLGdCQUFnQjtFQUNoQixtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxnQkFBZ0I7QUFDbEI7QUFDQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTtFQUNFLGlCQUFpQjtBQUNuQiIsInNvdXJjZXNDb250ZW50IjpbIiAqIHtcbiAgbWFyZ2luOiAwO1xuICBwYWRkaW5nOiAwO1xuICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xuICBmb250LWZhbWlseTogJ1NlZ29lIFVJJywgVGFob21hLCBHZW5ldmEsIFZlcmRhbmEsIHNhbnMtc2VyaWY7XG5cbn1cblxuYm9keSB7XG4gIGJhY2tncm91bmQ6IHdoaXRlO1xuICBjb2xvcjogIzExMTtcbn1cblxuLyogTkFWQkFSICovXG4ubmF2YmFyIHtcbiAgZGlzcGxheTogZmxleDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgZ2FwOiAxMnB4O1xuICBwYWRkaW5nOiAxNnB4IDI0cHg7XG4gIGJhY2tncm91bmQ6IHdoaXRlO1xufVxuXG4ubmF2YmFyIGlucHV0IHtcbiAgZmxleDogMTtcbiAgcGFkZGluZzogOHB4IDEycHg7XG59XG5cbi5sb2dpbiB7XG4gIGJhY2tncm91bmQ6ICMyNTYzZWI7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgYm9yZGVyOiBub25lO1xuICBwYWRkaW5nOiA4cHggMTRweDtcbn1cblxuLyogSEVSTyAqL1xuLmhlcm8ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBnYXA6IDQwcHg7XG4gIHBhZGRpbmc6IDQwcHggMjRweDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBmb250LWZhbWlseTogJ1NlZ29lIFVJJywgVGFob21hLCBHZW5ldmEsIFZlcmRhbmEsIHNhbnMtc2VyaWY7XG59XG5cbi5oZXJvLWxlZnQge1xuICBmbGV4OiAxO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi5oZXJvIGgxIHNwYW4sXG4uYnJhbmRzIHNwYW4sXG4uY3RhIHNwYW4ge1xuICBiYWNrZ3JvdW5kOiBsaW5lYXItZ3JhZGllbnQodG8gcmlnaHQsICMyNTYzZWIsICNlYzQ4OTkpO1xuICBiYWNrZ3JvdW5kLWNsaXA6IHRleHQ7XG4gIGNvbG9yOiB0cmFuc3BhcmVudDtcbn1cblxuLmhlcm8tYnV0dG9ucyB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGdhcDogMTJweDtcbiAgbWFyZ2luOiAyMHB4IDA7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgZm9udC1mYW1pbHk6ICdTZWdvZSBVSScsIFRhaG9tYSwgR2VuZXZhLCBWZXJkYW5hLCBzYW5zLXNlcmlmO1xufVxuXG4ucHJpbWFyeSB7XG4gIGJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudCh0byByaWdodCwgIzI1NjNlYiwgI2VjNDg5OSk7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgYm9yZGVyOiBub25lO1xuICBwYWRkaW5nOiAxMnB4IDIwcHg7XG59XG5cbi5zZWNvbmRhcnkge1xuICBiYWNrZ3JvdW5kOiB3aGl0ZTtcbiAgYm9yZGVyOiAycHggc29saWQgIzI1NjNlYjtcbiAgY29sb3I6ICMyNTYzZWI7XG4gIHBhZGRpbmc6IDEycHggMjBweDtcbn1cblxuLnN0YXRzIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZ2FwOiAzMHB4O1xuICBtYXJnaW4tdG9wOiAyMHB4O1xufVxuXG4uc3RhdHMgc3BhbiB7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICBmb250LXNpemU6IDEzcHg7XG4gIGNvbG9yOiAjNjY2O1xufVxuXG4uaGVyby1yaWdodCB7XG4gIGZsZXg6IDE7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG5oZWlnaHQ6IDIwMHB4O1xuZm9udC1mYW1pbHk6ICdTZWdvZSBVSScsIFRhaG9tYSwgR2VuZXZhLCBWZXJkYW5hLCBzYW5zLXNlcmlmO1xubWFyZ2luLXRvcDogMzBweDtcbm1hcmdpbi1ib3R0b206IDBweDtcbn1cblxuLmZlYXR1cmUtY2FyZCB7XG4gIGJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudCgxMzVkZWcsICNlZWYyZmYsICNmZGYyZjgpO1xuICBwYWRkaW5nOiA0MHB4O1xuICBib3JkZXItcmFkaXVzOiAyMHB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi8qIEJSQU5EUyAqL1xuLmJyYW5kcyB7XG4gIGJhY2tncm91bmQ6IHdoaXRlO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIHBhZGRpbmc6IDMwcHggMjRweDtcbn1cblxuLmJyYW5kLWljb25zIHtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG4gIG1hcmdpbi10b3A6IDMwcHg7XG4gIGNvbG9yOiAjNTU1O1xufVxuXG4vKiBQUk9EVUNUUyAqL1xuLnByb2R1Y3RzIHtcbiAgcGFkZGluZzogNDBweCAyNHB4O1xufVxuXG4ucHJvZHVjdHMtaGVhZGVyIHtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICBtYXJnaW4tYm90dG9tOiAyMHB4O1xufVxuXG4ucHJvZHVjdC1ncmlkIHtcbiAgZGlzcGxheTogZ3JpZDtcbiAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiByZXBlYXQoYXV0by1maXQsIG1pbm1heCgyMDBweCwgMWZyKSk7XG4gIGdhcDogMjJweDtcbn1cblxuLnByb2R1Y3QtY2FyZCB7XG4gIGJhY2tncm91bmQ6IHdoaXRlO1xuICBwYWRkaW5nOiAxNnB4O1xuICBib3JkZXItcmFkaXVzOiAxNnB4O1xufVxuXG4ucHJvZHVjdC1jYXJkIGltZyB7XG4gIHdpZHRoOiAxMDAlO1xuICBib3JkZXItcmFkaXVzOiAxMnB4O1xufVxuXG4udGFnIHtcbiAgYmFja2dyb3VuZDogI2VlZjJmZjtcbiAgY29sb3I6ICM0MzM4Y2E7XG4gIHBhZGRpbmc6IDRweCAxMHB4O1xuICBib3JkZXItcmFkaXVzOiAxMnB4O1xuICBmb250LXNpemU6IDEycHg7XG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgbWFyZ2luOiA4cHggMDtcbn1cblxuLnByb2R1Y3QtY2FyZCBidXR0b24ge1xuICB3aWR0aDogMTAwJTtcbiAgbWFyZ2luLXRvcDogMTBweDtcbiAgcGFkZGluZzogMTBweDtcbiAgYmFja2dyb3VuZDogIzI1NjNlYjtcbiAgY29sb3I6IHdoaXRlO1xuICBib3JkZXI6IG5vbmU7XG59XG5cbi8qIENUQSAqL1xuLmN0YSB7XG4gIGJhY2tncm91bmQ6IHdoaXRlO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIHBhZGRpbmc6IDYwcHggMjRweDtcbn1cblxuLmN0YS1idXR0b25zIHtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGdhcDogMTRweDtcbiAgbWFyZ2luLXRvcDogMjBweDtcbn1cblxuLnN1cHBvcnQge1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcbiAgcGFkZGluZzogMzBweDtcbiAgYmFja2dyb3VuZDogI2YxZjVmOTtcbiAgY29sb3I6ICMyNTYzZWI7XG59XG5cbi5zdXBwb3J0IHNwYW4ge1xuICBkaXNwbGF5OiBibG9jaztcbiAgZm9udC1zaXplOiAxM3B4O1xufVxuXG4uYnJhbmRzIHtcbiAgYmFja2dyb3VuZDogI2Y4ZmFmYztcbiAgcGFkZGluZzogNDBweCAyNHB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIG1hcmdpbjoxMHB4IDBweDtcbn1cblxuLmJyYW5kcyBoMiB7XG4gIGZvbnQtc2l6ZTogMjhweDtcbiAgZm9udC13ZWlnaHQ6IDgwMDtcbn1cblxuLmJyYW5kcyBoMiBzcGFuIHtcbiAgYmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KHRvIHJpZ2h0LCAjMjU2M2ViLCAjZWM0ODk5KTtcbiAgYmFja2dyb3VuZC1jbGlwOiB0ZXh0O1xuICBjb2xvcjogdHJhbnNwYXJlbnQ7XG59XG5cbi5icmFuZHMtc3ViIHtcbiAgbWFyZ2luLXRvcDogMTBweDtcbiAgZm9udC1zaXplOiAxNXB4O1xuICBjb2xvcjogIzY0NzQ4YjtcbiAgbWF4LXdpZHRoOiA3MDBweDtcbiAgbWFyZ2luLWxlZnQ6IGF1dG87XG4gIG1hcmdpbi1yaWdodDogYXV0bztcbn1cblxuLmJyYW5kLWljb25zIHtcbiAgbWFyZ2luLXRvcDogNTBweDtcbiAgZGlzcGxheTogZ3JpZDtcbiAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiByZXBlYXQoNCwgMWZyKTtcbiAgZ2FwOiAzMnB4O1xuICBtYXgtd2lkdGg6IDExMDBweDtcbiAgbWFyZ2luLWxlZnQ6IGF1dG87XG4gIG1hcmdpbi1yaWdodDogYXV0bztcbn1cblxuLmJyYW5kLWNhcmQge1xuICBiYWNrZ3JvdW5kOiB3aGl0ZTtcbiAgcGFkZGluZzogMzJweCAyNHB4O1xuICBib3JkZXItcmFkaXVzOiAxOHB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi5pY29uLWNpcmNsZSB7XG4gIHdpZHRoOiA1NnB4O1xuICBoZWlnaHQ6IDU2cHg7XG4gIG1hcmdpbjogMCBhdXRvIDE0cHg7XG4gIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgYmFja2dyb3VuZDogI2VlZjJmZjtcbiAgY29sb3I6ICMyNTYzZWI7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBmb250LXNpemU6IDIycHg7XG59XG5cbi5icmFuZC1jYXJkIGg0IHtcbiAgZm9udC1zaXplOiAxNnB4O1xuICBmb250LXdlaWdodDogNzAwO1xuICBtYXJnaW4tYm90dG9tOiA2cHg7XG59XG5cbi5icmFuZC1jYXJkIHNwYW4ge1xuICBmb250LXNpemU6IDE0cHg7XG4gIGNvbG9yOiAjNjQ3NDhiO1xufVxuLmhlcm8ge1xuICBwYWRkaW5nLXRvcDogMTAwcHg7XG4gIHBhZGRpbmctYm90dG9tOiAxMDBweDtcbn1cbi5oZXJvLWJ1dHRvbnMge1xuICBtYXJnaW4tdG9wOiAyOHB4O1xuICBtYXJnaW4tYm90dG9tOiAzMnB4O1xufVxuXG4uc3RhdHMge1xuICBtYXJnaW4tdG9wOiAyMHB4O1xufVxuXG4uc3RhdHMgZGl2IHtcbiAgbWluLXdpZHRoOiAxMTBweDtcbn1cbi5mZWF0dXJlLWNhcmQge1xuICBwYWRkaW5nOiA0OHB4O1xufVxuXG4uYnJhbmRzIHtcbiAgcGFkZGluZy10b3A6IDkwcHg7XG59Il0sInNvdXJjZVJvb3QiOiIifQ== */</style></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><section class="hero"><div class="hero-container"><div class="hero-left"><span class="hero-trust">★★★★★ Trusted by 50,000+ customers</span><h1>Shop Smarter, <span>Live Better</span></h1><p>Discover premium electronics and gadgets at unbeatable prices. Experience quality, innovation, and style with every purchase.</p><div class="hero-buttons"><button class="primary">Explore Products</button><button class="secondary">Join 50K+ Customers</button></div><div class="stats"><div>1000+<span>Products</span></div><div>50K+<span>Happy Customers</span></div><div>4.8/5<span>Rating</span></div></div></div><div class="hero-right"><div class="feature-card"><div class="icon-circle">👜</div><h3>Premium Quality</h3><p>Curated collection of the best products</p></div></div></div></section><section class="brands"><h2>Trusted by <span>100+ Brands</span></h2><p class="brands-sub">Join thousands of satisfied customers who trust us for quality products and exceptional service.</p><div class="brand-icons"><div class="brand-card"><div class="icon-circle">🔒</div><h4>Secure Payments</h4><span>100% secure transactions</span></div><div class="brand-card"><div class="icon-circle">⭐</div><h4>Premium Quality</h4><span>Only authentic products</span></div><div class="brand-card"><div class="icon-circle">🚚</div><h4>Fast Delivery</h4><span>Same day delivery available</span></div><div class="brand-card"><div class="icon-circle">👥</div><h4>Trusted by 50K+</h4><span>Happy customers worldwide</span></div></div></section><section class="products"><h2>Featured Products</h2><div class="product-grid"><div class="product-card"><span class="badge">Laptops</span><img alt="MacBook Pro M3" src="Vidushi%20Commerce%20App_files/photo-1517336714731-489689fd1ca8.jpg"><h3>MacBook Pro M3</h3><p class="desc">Apple MacBook Pro with M3 chip, 14-inch Liquid Retina XDR display</p><div class="rating">⭐ 4.8</div><div class="bottom"><span class="price">₹199900</span><button>Add to Cart</button></div></div><div class="product-card"><span class="badge">Smartphones</span><img alt="iPhone 15 Pro" src="Vidushi%20Commerce%20App_files/photo-1592750475338-74b7b21085ab.jpg"><h3>iPhone 15 Pro</h3><p class="desc">iPhone 15 Pro with titanium design and advanced camera system</p><div class="rating">⭐ 4.9</div><div class="bottom"><span class="price">₹134900</span><button>Add to Cart</button></div></div><div class="product-card"><span class="badge">Audio</span><img alt="Sony WH-1000XM5" src="Vidushi%20Commerce%20App_files/photo-1505740420928-5e560c06d30e.jpg"><h3>Sony WH-1000XM5</h3><p class="desc">Industry-leading noise canceling wireless headphones</p><div class="rating">⭐ 4.7</div><div class="bottom"><span class="price">₹29990</span><button>Add to Cart</button></div></div><div class="product-card"><span class="badge">Tablets</span><img alt="iPad Air M2" src="Vidushi%20Commerce%20App_files/photo-1561154464-82e9adf32764.jpg"><h3>iPad Air M2</h3><p class="desc">iPad Air with M2 chip, 10.9-inch Liquid Retina display</p><div class="rating">⭐ 4.6</div><div class="bottom"><span class="price">₹59900</span><button disabled="disabled">Out of Stock</button></div></div><div class="product-card"><span class="badge">Laptops</span><img alt="Dell XPS 13" src="Vidushi%20Commerce%20App_files/photo-1496181133206-80ce9b88a853.jpg"><h3>Dell XPS 13</h3><p class="desc">Dell XPS 13 laptop with Intel Core i7 and premium design</p><div class="rating">⭐ 4.5</div><div class="bottom"><span class="price">₹89900</span><button>Add to Cart</button></div></div><div class="product-card"><span class="badge">Smartphones</span><img alt="Samsung Galaxy S24" src="Vidushi%20Commerce%20App_files/photo-1511707171634-5f897ff02aa9.jpg"><h3>Samsung Galaxy S24</h3><p class="desc">Samsung Galaxy S24 with advanced AI features and camera</p><div class="rating">⭐ 4.4</div><div class="bottom"><span class="price">₹79999</span><button>Add to Cart</button></div></div><div class="product-card"><span class="badge">Wearables</span><img alt="Apple Watch Series 9" src="Vidushi%20Commerce%20App_files/photo-1434493789847-2f02dc6ca35d.jpg"><h3>Apple Watch Series 9</h3><p class="desc">Apple Watch Series 9 with advanced health monitoring</p><div class="rating">⭐ 4.7</div><div class="bottom"><span class="price">₹41900</span><button>Add to Cart</button></div></div><div class="product-card"><span class="badge">Cameras</span><img alt="Canon EOS R5" src="Vidushi%20Commerce%20App_files/photo-1606983340126-99ab4feaa64a.jpg"><h3>Canon EOS R5</h3><p class="desc">Professional mirrorless camera with 45MP full-frame sensor</p><div class="rating">⭐ 4.8</div><div class="bottom"><span class="price">₹329900</span><button>Add to Cart</button></div></div></div></section><section class="cta"><span class="cta-pill">⭐ Join 50,000+ Happy Customers</span><h2>Your Favorite Products Are <span>Just a Click Away</span></h2><p>Start your shopping journey today</p><div class="cta-buttons"><button class="primary">Browse All Products</button><button class="secondary">Contact Support</button></div><div class="support"><div><strong>24/7</strong><span>Customer Support</span></div><div><strong>30 Days</strong><span>Return Policy</span></div><div><strong>Free</strong><span>Shipping ₹999+</span></div><div><strong>100%</strong><span>Secure Payments</span></div></div></section><footer class="footer">© 2026 ShopX</footer></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  
+
+<span id="undefined" style="display: none;"></span><span id="undefined" style="display: none;"></span><span id="undefined" style="display: none;"></span></body></html>
